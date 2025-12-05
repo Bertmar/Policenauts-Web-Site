@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Policenauts Fan Site</title>
+  <link rel="stylesheet" href="./police.css">
+</head>
+<body>
+
+  <div class="marco">
+    <header>
+      <h1>POLICENAUTS</h1>
+    </header>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li>
+          <a href="#">Historia</a>
+          <ul class="submenu">
+            <li><a href="#">Año 2040</a></li>
+            <li><a href="#">Beyond Coast</a></li>
+            <li><a href="#">Misterio</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Personajes</a>
+          <ul class="submenu">
+            <li><a href="#">Jonathan Ingram</a></li>
+            <li><a href="#">Ed Brown</a></li>
+            <li><a href="#">Lorraine</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Multimedia</a>
+          <ul class="submenu">
+            <li><a href="#">Imágenes</a></li>
+            <li><a href="./police_video.html">Videos</a></li>
+            <li><a href="#">OST</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+<section class="contenido">
+  <h2>Bienvenido a Beyond Coast</h2>
+  <p>Bienvenido a la joya orbital de la humanidad y símbolo de la nueva era espacial. Aquí, en esta colonia artificial suspendida entre las estrellas, la tecnología y la vida cotidiana se fusionan en una danza de progreso y control. Beyond Coast no solo es un logro de ingeniería, es un experimento social donde se redefine lo que significa ser humano fuera de la Tierra. Pero bajo la superficie brillante de esta metrópolis flotante, laten secretos, tensiones y peligros que amenazan con estallar en cualquier momento. Prepárate para descubrir un mundo donde la justicia tiene que adaptarse al vacío, y donde cada rincón puede esconder una verdad más profunda. Esto no es solo el futuro… es la última frontera.</p>
+  <img src="./beyond.png" alt="Portada de Policenauts">
+
+  <div class="formulario-contenedor">
+    <h1>Registro Espacial</h1>
+    <form action="procesar-formulario" method="post">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="fecha">Fecha de Nacimiento</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="genero">Género</label>
+      <select id="genero" name="genero" required>
+        <option value="">Seleccione una opción</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+      </select>
+
+      <label>Intereses</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="intereses" value="Simulaciones Espaciales"> Simulaciones Espaciales</label>
+        <label><input type="checkbox" name="intereses" value="Tecnología Cibernética"> Tecnología Cibernética</label>
+        <label><input type="checkbox" name="intereses" value="Exploración Lunar"> Exploración Lunar</label>
+      </div>
+
+      <input type="submit" value="Registrarse">
+    </form>
+  </div>
+</section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://i.redd.it/4oi8uoop4aj31.jpg);
+  font-family: "Courier New", monospace;
+  color: lime;
+}
+
+.marco {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  font-size: 40px;
+  color: white;
+}
+
+nav {
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #111;
+  border-top: 2px solid cyan;
+  border-bottom: 2px solid cyan;
+  justify-content: space-around;
+}
+
+.menu > li {
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  padding: 12px;
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #222;
+  color: #00ffff;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  border: 1px solid cyan;
+  width: 100%;
+  z-index: 100;
+}
+
+.submenu li {
+  border-bottom: 1px dotted #00ffff;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.contenido {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.contenido h2 {
+  color: #00ffcc;
+  font-size: 24px;
+  border-bottom: 1px dotted #888;
+  padding-bottom: 5px;
+}
+
+.contenido img {
+  display: block;
+  margin: 15px auto 0 auto;
+  border: 2px solid cyan;
+}
+
+.botones {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #111;
+  color: lime;
+  border: 2px inset lime;
+  padding: 10px 20px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lime;
+  color: #111;
+}
+
+.formulario-contenedor {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px double cyan;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  color: lime;
+}
+
+.formulario-contenedor h1 {
+  text-align: center;
+  color: cyan;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 20px;
+}
+
+.formulario-contenedor form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contenedor label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.formulario-contenedor input[type="text"],
+.formulario-contenedor input[type="email"],
+.formulario-contenedor input[type="password"],
+.formulario-contenedor input[type="date"],
+.formulario-contenedor select {
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #000;
+  border: 2px solid lime;
+  color: lime;
+  font-family: "Courier New", monospace;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: black;
+  color: lime;
+  border: 2px inset lime;
+  font-size: 16px;
+  font-family: "Courier New", monospace;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: lime;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: black;
+  border: 2px solid lime;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background-color: lime;
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+input[type="checkbox"]:hover {
+  border-color: cyan;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  border: 1px solid cyan;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lime;
+  border: 2px solid cyan;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00ffcc;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: lime black;
+}
+
+.video-galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
